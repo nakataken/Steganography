@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+}
+
+header {
+  background-color: #1e212d;
+  margin: 0;
+}
+
+footer {
+  background-color: #1e212d;
+  color: #ecf0f1;
+  margin-bottom: 0;
+  height: 6.5vh;
+}
+
+body {
+  background-color: #faf3e0;
+}
+
+.main {
+  min-height: 85vh;
+  margin-bottom: 0;
+}
+
+.img-thumbnail {
+  background-color: #eabf9f;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: auto;
+  max-height: auto;
+}
+
+.btn {
+  background-color: #faf3e0;
+}
+
+.btn:hover {
+  background-color: #b68973;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  color: #ecf0f1;
+}
+
+.separator {
+  margin: 5%;
+}
