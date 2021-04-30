@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENAME NYO NALANG TO</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <h1 class="navbar-brand">RENAME NYO NALANG TO</h1>
+    </header>
+    <div class="main container-fluid">
+        <div class="row justify-content-center">
+            <div class="card m-2 col-lg-5">
+                <div class="card-header blockquote">ENCODE</div>
+                <div class="card-body">
+                    <div class="m-1">
+                        <div class="lead d-block">Source</div>
+                        <img id="image1" class="img-thumbnail d-block" src="" alt="">
+                    </div>
+
+                    <div class="m-1">
+                        <div class="lead d-block">Result</div>
+                        <img id="image2" class="img-thumbnail d-block" src="" alt="">
+                    </div>
+
+                    <div class="lead d-block m-2">Upload</div>
+                    <div class="card p-3">
+                        <input class="btn btn-light btn-outline-dark d-block m-1" type="file" name="img" id=""
+                            accept="image/*" onchange="readURL(this)">
+                        <input class="p-1" id="text" type="text">
+                        <button class="btn btn-outline-dark" onclick="hideText()">Encode</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card m-2 col-lg-5">
+                <div class="card-header blockquote">DECODE</div>
+                <div class="card-body">
+                    <div class="m-1">
+                        <div class="lead d-block">Encoded Image</div>
+                        <img id="image3" class="img-thumbnail d-block" src="" alt="">
+                    </div>
+
+                    <div class="lead d-block m-2">Upload</div>
+                    <div class="card p-3">
+                        <input class="btn btn-light btn-outline-dark d-block m-1" type="file" name="img1" id=""
+                            accept="image/*" onchange="decode(this)">
+                        <div class="lead d-block"> Decoded Text: <div id="decoded" class="lead d-inline"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="navbar footer d-flex justify-content-center">
+        &copy; 2021
+    </footer>
+
+    <script src="script/steganography.min.js"></script>
+    <script src="script/index.js"></script>
+</body>
+
+</html>
